@@ -1,9 +1,12 @@
 package ua.edu.ucu;
 
-import ua.edu.ucu.stream.*;
-import org.junit.Test;
-import static org.junit.Assert.*;
 import org.junit.Before;
+import org.junit.Test;
+import ua.edu.ucu.stream.AsIntStream;
+import ua.edu.ucu.stream.IntStream;
+
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
 
 /**
  *
@@ -22,7 +25,7 @@ public class StreamAppTest {
     @Test
     public void testStreamOperations() {
         System.out.println("streamOperations");
-        int expResult = 42;
+        int expResult = 14;
         int result = StreamApp.streamOperations(intStream);
         assertEquals(expResult, result);        
     }
